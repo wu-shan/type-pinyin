@@ -1,0 +1,5 @@
+# Ignore files
+!/
+!*.yaml
+!*.md
+!*.txt
