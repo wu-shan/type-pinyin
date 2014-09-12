@@ -4,11 +4,12 @@
 schema:
   schema_id: pinyin_dpfly
   name: 音節 - 小鶴雙拼
-  version: "0.0"
+  version: “0.1”
   author:
     - double pinyin layout by 鶴
     - Rime schema by 佛振 <chen.sst@gmail.com>
     - 饞貓渣
+    - just4u1314
   description: |
     “漢語拼音方案”拼音音節＋小鶴雙拼方案
 
@@ -48,39 +49,42 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba
+  alphabet: zyxwvutsrqponmlkjihgfedcbaABCDEFGHIJKLMNOPQRSTUVWYZ
   delimiter: " '"
   algebra:
     - erase/^xx$/
     - derive/^([jqxy])u$/$1v/
     - derive/^([aoe])([ioun])$/$1$1$2/
     - xform/^([aoe])(ng)?$/$1$1$2/
-    - xform/iu$/Q/
-    - xform/(.)ei$/$1W/
-    - xform/uan$/R/
-    - xform/[uv]e$/T/
-    - xform/un$/Y/
-    - xform/^sh/U/
-    - xform/^ch/I/
-    - xform/^zh/V/
-    - xform/uo$/O/
-    - xform/ie$/P/
-    - xform/i?ong$/S/
-    - xform/ing$|uai$/K/
-    - xform/(.)ai$/$1D/
-    - xform/(.)en$/$1F/
-    - xform/(.)eng$/$1G/
-    - xform/[iu]ang$/L/
-    - xform/(.)ang$/$1H/
-    - xform/ian$/M/
-    - xform/(.)an$/$1J/
-    - xform/(.)ou$/$1Z/
-    - xform/[iu]a$/X/
-    - xform/iao$/N/
-    - xform/(.)ao$/$1C/
-    - xform/ui$/V/
-    - xform/in$/B/
-    - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/
+    - xform/iu$/q/
+    - xform/(.)ei$/$1w/
+    - xform/uan$/r/
+    - xform/[uv]e$/t/
+    - xform/un$/y/
+    - xform/^Sh/U/
+    - xform/^sh/u/
+    - xform/^ch/i/
+    - xform/^Ch/I/
+    - xform/^Zh/V/
+    - xform/^zh/v/
+    - xform/uo$/o/
+    - xform/ie$/p/
+    - xform/i?ong$/s/
+    - xform/ing$|uai$/k/
+    - xform/(.)ai$/$1d/
+    - xform/(.)en$/$1f/
+    - xform/(.)eng$/$1g/
+    - xform/[iu]ang$/l/
+    - xform/(.)ang$/$1h/
+    - xform/ian$/m/
+    - xform/(.)an$/$1j/
+    - xform/(.)ou$/$1z/
+    - xform/[iu]a$/x/
+    - xform/iao$/n/
+    - xform/(.)ao$/$1c/
+    - xform/ui$/v/
+    - xform/in$/b/
+    #- xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/
     #- abbrev/^(.).+$/$1/
 
 translator:
