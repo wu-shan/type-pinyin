@@ -10,8 +10,9 @@ schema:
     - Rime schema by 佛振 <chen.sst@gmail.com>
     - 饞貓渣
     - just4u1314
+    - 吳善
   description: |
-    “漢語拼音方案”拼音音節＋小鶴雙拼方案
+    用雙拼輸入帶聲調的拼音
 
 switches:
   - name: ascii_mode
